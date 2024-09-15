@@ -9,3 +9,18 @@ git push -u origin main
 -- git status to track down files.
 
 -- when there are empty folders, not even files, then git status even after creating new folders will say nothing to push. But for tracking changes, add .gitkeep in that type of folders and this file is empty.
+
+-- file creation flow:
+
+package.json through npm init and and script and type
+add nodemon by installing npm i -D nodemon --> a dev dependency which does not go into production unlike main dependency.
+and add script: "dev" : "nodemon src/index.js"
+Readme.md
+.gitkeep
+.gitignore (copy all node files from .gitignore generator)
+.env (environment variable file)
+
+make a src folder in main directory, and in src folder create:
+  app.js
+  constants.js 
+  index.js
