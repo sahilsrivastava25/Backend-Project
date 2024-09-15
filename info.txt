@@ -1,0 +1,7 @@
+-- To make git directory in VS Code:
+git init
+git add .
+git commit -m"new commit"
+git branch -M main (to rename a existing current branch)
+git remote add origin repo_link
+git push -u origin main
