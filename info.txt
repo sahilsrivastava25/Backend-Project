@@ -5,3 +5,7 @@ git commit -m"new commit"
 git branch -M main (to rename a existing current branch)
 git remote add origin repo_link
 git push -u origin main
+
+-- git status to track down files.
+
+-- when there are empty folders, not even files, then git status even after creating new folders will say nothing to push. But for tracking changes, add .gitkeep in that type of folders and this file is empty.
