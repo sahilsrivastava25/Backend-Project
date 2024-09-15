@@ -12,15 +12,45 @@ git push -u origin main
 
 -- file creation flow:
 
-package.json through npm init and and script and type
+1.package.json through npm init and add script and type
 add nodemon by installing npm i -D nodemon --> a dev dependency which does not go into production unlike main dependency.
 and add script: "dev" : "nodemon src/index.js"
-Readme.md
+
+2.Readme.md
 .gitkeep
 .gitignore (copy all node files from .gitignore generator)
 .env (environment variable file)
 
-make a src folder in main directory, and in src folder create:
+3.make a src folder in main directory, and in src folder create:
   app.js
   constants.js 
   index.js
+
+4. In src folder, make directories:
+  controllers: main functionality is here
+  db: database connection
+  models: schemas
+  middlewars: to impose checkin between frontend and servers
+  utils: utilitiess like mail utility, file upload, etc.
+  routes: various routes
+
+5. download prettier extension: npm i -D prettier
+then create a file .prettierrc and then add the following:
+
+{
+    "singleQuote": false,
+    "bracketSpacing": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "semi": true
+}
+
+make .prettierignore so that those files can't be affected and the following:
+
+/.vscode
+/node_modules
+./dist
+
+*.env
+.env
+.env.*
