@@ -8,7 +8,7 @@ const connectDB = async () => {
         console.log(`\n MongoDB connected !! DB HOST: ${connectionInstance.connection.host}`);
     } catch (error) {
         console.log("MONGODB connection FAILED ", error);
-        process.exit(1)
+        process.exit(1) // process.exit( code ) Parameter: This function accepts single parameter as mentioned above and described below: Code: It can be either 0 or 1. 0 means end the process without any kind of failure and 1 means end the process with some failure.
     }
 }
 
